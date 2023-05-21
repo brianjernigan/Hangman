@@ -12,7 +12,7 @@ def get_user_input(prompt):
 
 # generate random word from list and print
 round_word = random.choice(word_list)
-print(round_word)
+print("Welcome to Hangman!")
 
 # print array of spaces for each letter in the word
 for i in range(len(round_word)):
