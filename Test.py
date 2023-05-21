@@ -7,6 +7,7 @@ player_lives = 5
 
 def get_user_input(prompt):
     user_input = input(prompt).lower()
+    print("\n")
     return user_input
 
 # generate random word from list and print
@@ -23,7 +24,6 @@ while player_lives > 0:
     found_in_word = False
     if is_first_guess:
         user_guess = get_user_input("Guess a letter: ")
-        print("\n")
         for i in range(len(round_word)):
             if user_guess == round_word[i]:
                 display[i] = user_guess
@@ -35,7 +35,6 @@ while player_lives > 0:
             player_lives -= 1
     else:
         user_guess = get_user_input("Guess again: ")
-        print("\n")
         for i in range(len(round_word)):
             if user_guess == round_word[i]:
                 display[i] = user_guess
